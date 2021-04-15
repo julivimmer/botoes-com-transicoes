@@ -1,0 +1,107 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FCF6BD;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	color: #D0F4DE;
+}
+h2{
+	text-align: center;
+	margin-top: 20px;
+	color: #FF99C8;
+	text-transform:uppercase;
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;	
+}
+h2 span{
+	color: #70D6FF;
+}
+
+/*Inicio botão 1*/
+
+.botao-hover{
+	width: 300px;
+	height: 64px;
+	font: 1em/4em normal open, sans-serif;
+	background-color: #E4C1F9;
+	margin: 50px auto 50px auto;
+	/*
+	primeiro px: superior
+	segundo px: direita
+	terceiro px: inferior
+	quarto px: esquerda 
+	auto deixa centralizado automaticamente
+	codigo abreviado:
+	margin:50px auto - 50 px vale p/ sup e inf, auto p/ esq e dir.
+	*/
+	
+	border: 3px solid #FCF6BD;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.botao-hover a{
+	text-decoration: none;
+	text-align: center;
+	color: #D0F4DE;
+	display: block;
+}
+.botao-hover, .efeito-link{
+	transition: 0.5s;
+}
+.botao-hover:hover{
+	background-color: #FFA225;
+}
+.botao-hover:hover .efeito-link{
+	margin-top: -4em;
+}
+
+/* Fim botão 1*/
+
+/* Inicio botão 2*/
+
+.container-botao2{
+	width: 100%;
+	margin:auto;
+}
+section{
+	max-width: 300px;
+	margin: 0 auto 0 auto;
+	
+}
+
+section #bu-bu{
+	float:left;
+	width:300px;
+	max-width:300px;
+	background-color: #000110;
+	border: 2px solid #f7f7f7;
+	padding:15px;
+	color: #f7f7f7;
+	font-family: open, sans-serif;
+	text-transform:uppercase;
+	font-size:18px;
+	letter-spacing: 1px;
+	transition:0.5s;
+}
+section #bu-bu:hover{
+	background-color: rgba(0,0,0,0);
+	color: #27ae60;
+}
+.efeito-transicao{
+	width:0;
+	height:55px;
+	background-color: #70D6FF;
+	transition: 1s;
+}
+.container-sup:hover .efeito-transicao{
+	width: 100%;
+	max-width:300px;
+	background-color: #70D6FF;
+	border:0;
+}
+
+/*Fim botão 2*/
